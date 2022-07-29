@@ -1,0 +1,101 @@
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ body{
+     background-color: #0a7aca;
+ }
+ 
+ .wrapper{
+     width: 40%;
+     min-width: 500px;
+     position: absolute;
+     transform: translate(-50%, -50%);
+     left: 50%;
+     top: 50%;
+ }
+ 
+ .container{
+     width: 100%;
+     background-color: white;
+     padding: 30px 30px 50px; 
+     border-radius: 8px;
+     box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+ }
+ 
+ .container *{
+     font-family: Arial, Helvetica, sans-serif;
+     color: black;
+     font-weight: 500;
+ }
+ 
+ h2{
+   margin-bottom: 50px;
+   font-size: 28px;
+   text-align: center;
+   font-weight: bold;
+   letter-spacing: 1px;
+ }
+ 
+ .details{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 10px;
+ }
+ 
+ .bar{
+     position: relative;
+     border: 2px solid #0d96e0;
+     border-radius: 20px;
+ }
+ 
+ .bar div{
+     position: relative;
+     width: 0;
+     height: 9px;
+     border-radius: 8px;
+     background-color: #0d96e0;
+ }
+ 
+ .skills:not(:last-child){
+     margin-bottom: 30px;
+ }
+ 
+ #html-bar{
+     animation: html-fill 2s forwards;
+ }
+ @keyframes html-fill{
+     100%{
+         width: 90%;
+     }
+ }
+ 
+ #web-bar{
+     animation: web-fill 2s forwards;
+ }
+ @keyframes web-fill{
+     100%{
+         width: 75%;
+     }
+ }
+ 
+ #app-bar{
+     animation: app-fill 2s forwards;
+ }
+ @keyframes app-fill{
+     100%{
+         width: 50%;
+     }
+ }
+ 
+ #game-bar{
+     animation: game-fill 2s forwards;
+ }
+ @keyframes game-fill{
+     100%{
+         width: 55%;
+     }
+ }
